@@ -1,0 +1,18 @@
+{
+  "@vite/client": {
+    "prefetch": true,
+    "isEntry": true,
+    "file": "@vite/client",
+    "css": [],
+    "module": true,
+    "resourceType": "script"
+  },
+  "/Users/lethimyduyen/Documents/intern/16-01-2024/fnail01o/node_modules/.pnpm/nuxt@3.8.1_eslint@8.53.0_sass@1.69.5_typescript@5.2.2_vite@4.5.0/node_modules/nuxt/dist/app/entry.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "isEntry": true,
+    "file": "/Users/lethimyduyen/Documents/intern/16-01-2024/fnail01o/node_modules/.pnpm/nuxt@3.8.1_eslint@8.53.0_sass@1.69.5_typescript@5.2.2_vite@4.5.0/node_modules/nuxt/dist/app/entry.js"
+  }
+}

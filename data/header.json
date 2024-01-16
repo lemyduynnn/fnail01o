@@ -1,0 +1,46 @@
+{ 
+  "background": "#FFF",
+  "logo": "/images/logo.svg",
+  "alt_image": "Beauty Nails",
+  "icon_close": "/images/close_icon.svg",
+  "icon_menu": "/images/iconMenu.svg",
+  "items": [
+    {
+      "link": "/",
+      "text": "Home"
+    },
+    {
+      "link": "#about",
+      "text": "About Us"
+    },
+    {
+      "link": "#services",
+      "text": "Our services"
+    },
+    {
+      "link": "#gallery",
+      "text": "Gallery"
+    },
+    {
+      "link": "#contact",
+      "text": "Contact us"
+    }
+  ],
+  "_inputs": {
+    "background": {
+      "type": "color"
+    },
+    "logo": {
+      "type": "image"
+    },
+    "alt_image": {
+      "type": "text"
+    },
+    "icon_close": {
+      "type": "image"
+    } ,
+    "icon_menu": {
+      "type": "image"
+    }  
+  }
+}

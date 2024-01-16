@@ -1,0 +1,61 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Gallery Section
+  description: Gallery Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+    id: gallery
+    title: OUR
+    sub_title: GALLERY
+    background: /images/bg-section2.png
+    icon_star: /images/start.svg
+    alt_image:  Beauty Nails
+    gallery_items: 
+      - img: /images/gallery1.png
+        alt_image: Beauty Nails
+      - img: /images/gallery2.png
+        alt_image: Beauty Nails 
+      - img: /images/gallery3.png
+        alt_image: Beauty Nails 
+      - img: /images/gallery4.png
+        alt_image: Beauty Nails 
+      - img: /images/gallery5.png
+        alt_image: Beauty Nails 
+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+    id: 
+      type: text
+      label: ID Section
+    title:
+      type: text
+      label:  Title
+    sub_title:
+      type: text
+      label:  Sub Title
+    background:
+      type: image
+      label: Background
+    icon_star:
+      type: image
+      label: Icon Star
+    alt_image:
+      type: text
+      label: Alt Image
+    gallery_items[*].img:
+      type: image
+      label: Gallery Image
+    gallery_items[*].alt_image:
+      type: text
+      label: Gallery alt_image
+
+    
+

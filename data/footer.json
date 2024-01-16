@@ -1,0 +1,20 @@
+{ 
+  "background": "#60aaa1",
+  "title_footer": "Design by fastboy.net",
+  "follow": "Follow us",
+  "icon_footer": "/images/icon_footer.svg",
+  "inputs": {
+      "title_footer":{
+         "type": "text"
+      },
+      "follow":{
+         "type": "text"
+      },
+      "icon_footer":{
+         "type": "image"
+      },
+      "background":{
+         "type": "color"
+      }
+  }
+}

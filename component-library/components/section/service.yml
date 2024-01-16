@@ -1,0 +1,123 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Service Section
+  description: Service Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: services
+  icon_star: /images/start.svg
+  alt_image: beauty nail
+  title: OUR
+  sub_title: SERVICES
+  background: /images/bg-section2.png
+  icon_left: /images/icon-left.png
+  icon_right: /images/icon-right.png
+  services:
+    - text: MANICURE
+      service_item:
+        - img: /images/service1.png
+          image_alt: Beauty nail
+          author: By Anna
+        - img: /images/service2.png
+          image_alt: Beauty nail
+          author: By Steven
+        - img: /images/service3.png
+          image_alt: Beauty nail
+          author: By Lina
+        - img: /images/service4.png
+          image_alt: Beauty nail
+          author: By Steven
+    - text: PEDICURE
+      service_item:
+        - img: /images/service1.png
+          image_alt: Beauty nail
+          author: By Anna
+        - img: /images/service2.png
+          image_alt: Beauty nail
+          author: By Steven
+        - img: /images/service3.png
+          image_alt: Beauty nail
+          author: By Lina
+        - img: /images/service4.png
+          image_alt: Beauty nail
+          author: By Steven
+    - text: PERMANENT MAKEUP
+      service_item:
+        - img: /images/service1.png
+          image_alt: Beauty nail
+          author: By Anna
+        - img: /images/service2.png
+          image_alt: Beauty nail
+          author: By Steven
+        - img: /images/service3.png
+          image_alt: Beauty nail
+          author: By Lina
+        - img: /images/service4.png
+          image_alt: Beauty nail
+          author: By Steven
+    - text: MASSAGE
+      service_item:
+        - img: /images/service1.png
+          image_alt: Beauty nail
+          author: By Anna
+        - img: /images/service2.png
+          image_alt: Beauty nail
+          author: By Steven
+        - img: /images/service3.png
+          image_alt: Beauty nail
+          author: By Lina
+        - img: /images/service4.png
+          image_alt: Beauty nail
+          author: By Steven
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  icon_star:
+    type: image
+    label: Icon Star
+  alt_image:
+    type: text
+    label: Alt Image
+  title:
+    type: text
+    label: Title
+  sub_title:
+    type: text
+    label: Sub Title
+  background:
+    type: image
+    label: Background
+  icon_left:
+    type: image
+    label: Icon Back
+  icon_right:
+    type: image
+    label: Icon Next
+  services[*].text:
+    type: text
+    label: Service Text
+  services[*].service_item[*].img:
+    type: image
+    label: Image
+  services[*].service_item[*].image_alt:
+    type: text
+    label: Beauty nail
+  services[*].service_item[*].author:
+    type: text
+    label: Author
+  icon_left:
+    type: image
+    label: Icon Left
+  icon_right:
+    type: image
+    label: Icon Right

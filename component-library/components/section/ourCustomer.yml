@@ -1,0 +1,150 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Our Customer Section
+  description: Our Customer Section
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: ourCustomer
+  background: /images/bg-section5.png
+  alt_image: Beauty nail
+  title: WHAT
+  sub_title: OUR CUSTOMER SAY
+  icon_star: /images/start.svg
+  customer_items:
+    - img: /images/customer1.svg
+      alt_image: Beauty Nail
+      content: ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccI would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer2.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer3.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer4.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer1.svg
+      alt_image: Beauty Nail
+      content: ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccI would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer2.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer3.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer4.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer4.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer1.svg
+      alt_image: Beauty Nail
+      content: ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccI would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer2.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer3.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer4.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer1.svg
+      alt_image: Beauty Nail
+      content: ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccI would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer2.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+    - img: /images/customer3.svg
+      alt_image: Beauty Nail
+      content: I would say that my overall experience with them is great. Helen and Sandy, both of them are nice. Their service is great.
+      author: Jesslyn
+      birthday: December 2022
+  icon_left: /images/icon-left.png
+  icon_right: /images/icon-right.png
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  background:
+    type: image
+    label: Background
+  alt_image:
+    type: text
+    label: Alt Image
+  title:
+    type: text
+    label: Title
+  sub_title:
+    type: text
+    label: Sub Title
+  icon_star:
+    type: image
+    label: Icon star
+  icon_left:
+    type: image
+    label: Icon Prev
+  icon_right:
+    type: image
+    label: Icon Next
+  customer_items[*].img:
+    type: image
+    label: Customer Image
+  customer_items[*].alt_image:
+    type: text
+    label: Customer Alt Image
+  customer_items[*].content:
+    type: markdown
+    label: Customer Content
+  customer_items[*].author:
+    type: text
+    label: Customer Author
+  customer_items[*].birthday:
+    type: text
+    label: Customer Birthday
+  icon_left:
+    type: image
+    label: Icon Left
+  icon_right:
+    type: image
+    label: Icon Right
