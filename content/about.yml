@@ -1,0 +1,16 @@
+title: About
+content_blocks:
+  - _block_name: about/nav
+    id: nav
+    sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: about/hero
+    id: hero
+    title:
+    img: /images/about-us.jpeg
+    img_alt:
+    content:
+      <p>If you are seeking a nail salon that helps you to rejuvenate your beauty, Special Nails & Spa is the ideal destination! Located conveniently in Houston, TX 77042, our nail salon is proud to deliver the highest quality treatments to our customers.</p>
+      <p>Our goal is to make each client feel comfortable and special! You will always receive the best services and friendly smiles from our talented staff. We offer our clients the maximum in style, quality, and customer service. We invite you to experience the difference in our services.</p>
+      <p>We understand that Safety and Sanitation are key to your peace of mind. Our implements are medically sterilized and disinfected after each use. Buffers and files are used only once and then discarded. All pedicure procedures are done with liner protection. And above all, staff are trained to follow a proper sanitization protocol that puts clients' hygiene as the number one priority.</p>
+      <p>Enjoy our wide range of services in a cozy and luxurious environment. We look forward to serving you!</p>

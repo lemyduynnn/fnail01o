@@ -1,0 +1,55 @@
+title: Services
+content_blocks:
+  - _block_name: about/nav
+    id: nav
+    sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: services/our
+    id: our
+    title: Our Service
+    data:
+      - logo: /images/iconlogo.png
+        img: /images/service1.png
+        title: HAIRCUTS & STYLE
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: SHAMPOO AND STYLE
+            price: $44 - $60+
+          - name: CLIPPER CUTS
+            price: $20+
+          - name: FORMAL THERMAL STYLING
+            price: $85+
+      - logo: /images/iconlogo.png
+        img: /images/service1.png
+        title: COLOR & FOIL
+        button: Book now
+        type:
+          - name: THE BASIC BELLE
+            price: $108 - $160+
+          - name: THE BOMBSHELL BELLE
+            price: $228 - $322+
+          - name: THE MAINTENANCE BELLE
+            price: $148 - $214+
+          - name: THE ULTIMATE BELLE
+            price: $348 - $484+
+          - name: THE MODERN BELLE
+            price: $188 - $268+
+          - name: THE ULTIMATE BELLE
+            price: $348 - $484+
+          - name: THE IT'S COMPLICATED BELLE
+            price: $348 - $484+
+      - logo: /images/iconlogo.png
+        img: /images/service1.png
+        title: HAIR EXTENSIONS
+        button: Book now
+        type:
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+
+          - name: HAIRCUT AND STYLE
+            price: $42 - $78+

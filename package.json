@@ -4,7 +4,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "node public/js/fetch-routes-generate.js && node public/js/fetch-theme-color.js && nuxt generate",
+    "generate": "newzen fetch-routes-generate && node public/js/fetch-theme-color.js && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

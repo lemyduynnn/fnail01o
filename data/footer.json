@@ -1,20 +1,70 @@
 { 
-  "background": "#60aaa1",
-  "title_footer": "Design by fastboy.net",
-  "follow": "Follow us",
-  "icon_footer": "/images/icon_footer.svg",
-  "inputs": {
-      "title_footer":{
+  "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.742267448642!2d-95.57343112478767!3d29.72722407508493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640ddc6ed681049%3A0x74ace03ed50728e8!2sFastboy%20Marketing%20%26%20Construction!5e0!3m2!1svi!2s!4v1705473409196!5m2!1svi!2s",
+  "background": "/images/bg_footer.png",
+  "icons": [
+      {
+         "icon": "/images/facebook.png"
+      },
+      {
+         "icon": "/images/google-plus.png"
+      },
+      {
+         "icon": "/images/instagram.png"
+      },
+      {
+         "icon": "/images/yelp.png"
+      },
+      {
+         "icon": "/images/pinterest.png"
+      },
+      {
+         "icon": "/images/foursquare.png"
+      }
+  ],
+  "items": [
+      {
+         "title": "location"
+      },
+      {
+         "title": "open hours"
+      },
+      {
+         "title": "follow us"
+      }
+   ],
+   "information": [
+      {
+         "address": "11011 Richmond Ave,<br/>Ste 250 <br/>Houston, TX 77042"
+      },
+      {
+         "phone": "832-968-6668"
+      },
+      {
+         "mail": "web@fastboy.net<br/>design@fastboy.net"
+      }
+   ],
+   "open": [
+      {
+         "date": "Mon - Fri:",
+         "time": "10:00 am - 7:00pm"
+      },
+      {
+         "date": "Saturday:",
+         "time": "10:00 am - 6:00pm"
+      },
+      {
+         "date": "Sunday:",
+         "time": "Closed"
+      }
+   ],
+   "logo": "/images/logo.png",
+   "year": "© 2023 Special Nails & Spa. All Rights Reserved.",
+   "inputs": {
+      "googl_map":{
          "type": "text"
       },
-      "follow":{
-         "type": "text"
-      },
-      "icon_footer":{
+      "logo":{
          "type": "image"
-      },
-      "background":{
-         "type": "color"
       }
   }
 }

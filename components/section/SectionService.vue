@@ -3,93 +3,49 @@
   <section
     :id="block.id"
     :data-cms-binding="dataBinding"
-    class="bg-no-repeat bg-cover bg-center"
-    :style="{ backgroundImage: 'url(\'' + block.background + '\')' }"
+    class="w-full"
   >
-    <div
-      class="container flex flex-col justify-center items-center 3md:pb-0 pb-[90px]"
-    >
-      <!-- title -->
-      <div class="mt-[90px] mb-[30px] flex gap-[5px]">
-        <div class="flex flex-col items-end text-main justify-center">
-          <div class="font-rubik text-[45px] ">
+    <div class="container">
+      <div class="flex flex-col items-center font-bold text-main justify-center gap-4 py-4">
+          <h2 class="text-[40px]">
             {{ block.title }}
-          </div>
-          <div>
-            <img :src="block.icon_star" :alt="block.alt_image" />
-          </div>
-        </div>
-        <div class="text_sub_tile relative translate-y-[32%]">
-          <div class="font-yellowtail text-[45px] text-main translate-y-[-20%] break-all">
+          </h2>
+          <p class="text-[18px]">
             {{ block.sub_title }}
+          </p>
+          <span class="h-[8px] bg-main w-[100px]"></span>
+      </div>
+      <div class="relative grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 justify-center items-center mt-6 w-full">
+        <div 
+          v-for="(item, index) in block.services" 
+          :key="index"
+          class="w-full h-full relative hover_item"
+        >
+          <div
+            :style="{ backgroundImage: 'url(\'' + item.background_img + '\')' }"
+            class="h-full w-full bg-cover z-[-3333] background-hover"
+          ></div>
+          <div class="mx-10 bg-white">
+            <div class="aspect-[1/1]">
+              <img :src="item.img" class="w-full h-full border-[#e7e7e7] border-[3px] rounded-[50px]"/>
+            </div>
+            <div class="flex items-center gap-4 mt-6">
+              <span class="h-[5px] bg-main w-[50px]"></span>
+              <span class="uppercase font-bold">{{ item.text }}</span>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="w-full flex flex-col gap-[40px]">
-        <!-- desktop -->
-        <div class="hidden 3md:flex justify-around items-center">
-          <h1
-            v-for="(data, index) in block.services"
-            :key="index"
-            :class="{ 'text-main': handleActiveTab(index) }"
-            class="font-rubik text-[22px] px-[30px] py-[18px] cursor-pointer"
-            @click="changeSlider(index)"
-          >
-            {{ data.text }}
-          </h1>
-        </div>
-        <!-- swiper mobile -->
-        <div class="3md:hidden">
-          <swiper :slides-per-view="'auto'" :space-between="30">
-            <swiper-slide
-              v-for="(data, index) in block.services"
-              :key="index"
-              style="width: auto !important"
-              @click="changeSlider(index)"
-            >
-              <h2 :class="{ 'text-main': handleActiveTab(index) }" class="font-rubik text-[22px] px-[30px] py-[18px] cursor-pointer">
-                {{ data.text }}
-              </h2>
-            </swiper-slide>
-          </swiper>
-        </div>
-        <!-- swiper -->
-        <div>
-          <swiper @swiper="onSwiper" :slides-per-view="'auto'" class="custom_swiper" :space-between="16">
-            <swiper-slide v-for="(data, index) in serviceItems" :key="index" style="width: auto !important;">
-              <div class="flex flex-col hover:cursor-pointer">
-                <p class="w-[274px] h-[299px]">
-                  <img
-                    class="image"
-                    :src="data.img"
-                    :alt="data.image_alt"
-                  />
-                </p>
-                <p class="mt-[40px]">
-                  {{ data.author }}
-                </p>
-              </div>
-            </swiper-slide>
-          </swiper>
-          <div
-            class="hidden 3md:flex justify-center items-center gap-[30px] mt-[60px] mb-[90px]"
-          >
-            <img
-              :src="block.icon_left"
-              class="cursor-pointer"
-              :alt="block.alt_image"
-              :class="{ 'opacity-20 cursor-auto': disablePrev }"
-              @click="handlePrev"
-            />
-            <img
-              :src="block.icon_right"
-              class="cursor-pointer"
-              :class="{ 'opacity-20 cursor-auto': disableNext }"
-              :alt="block.alt_image"
-              @click="handleNext"
-            />
-          </div>
+      <div class="mt-16 md:flex-row flex flex-col justify-between lg:items-stretch items-start gap-4 h-full w-full">
+        <img :src="block.welcome.img" :alt="block.welcome.img_alt" class="md:w-1/2 w-full object-cover"/>
+        <div
+          :style="{ backgroundImage: 'url(\'' + block.welcome.bg_welcome + '\')' }"
+          class="p-4 flex flex-col gap-6 justify-start items-center "
+        >
+          <h2 class="leading-[34px] text-white uppercase text-[26px] text-center font-semibold" v-html="block.welcome.title"></h2>
+          <p class="leading-[34px] text-main text-[18px] text-justify font-normal	">{{ block.welcome.title_content1 }}</p>
+          <p class="leading-[34px] text-main text-[18px] text-justify font-normal	">{{ block.welcome.title_content2 }}</p>
+          <p class="flex flex-col justify-start w-full leading-[34px] text-[18px]"><a class="italic text-secondary outline-none no-underline cursor-pointer font-normal	">{{ block.welcome.view_more }}</a></p>
         </div>
       </div>
     </div>
@@ -103,50 +59,26 @@ interface Props {
 }
 
 const { dataBinding, block } = defineProps<Props>();
-const mySwiper = ref<any | null>(null);
-
-const disablePrev = computed(() => {
-  return mySwiper.value?.isBeginning;
-})
-const disableNext = computed(() => {
-  return mySwiper.value?.isEnd;
-})
-
-const onSwiper = (swiperInstance: any) => {
-  mySwiper.value = swiperInstance;
-};
-const handleActiveTab = (index: number) => {
-  return (
-    Math.round(mySwiper.value?.activeIndex / block.services.length) === index
-  );
-};
-const changeSlider = (idx: number) => {
-  if (mySwiper.value) {
-    const targetSlideIndex = idx * 4;
-    mySwiper.value.slideTo(targetSlideIndex);
-    handleActiveTab(idx);
-  }
-};
-
-const handlePrev = () => {
-  mySwiper.value.slideTo(mySwiper.value?.activeIndex - 4);
-};
-
-const handleNext = () => {
-  mySwiper.value.slideTo(mySwiper.value?.activeIndex + 4);
-};
-
-const serviceItems = ref(block.services.flatMap((item:any) => {
-  const arr = (item.service_item || []).map((item2:any) => {
-    return {
-      ...item2
-    };
-  });
-  return arr;
-}));
 
 </script>
 
 <style lang="scss" scoped>
+.hover_item{
+  .background-hover{
+    overflow: visible;
+    clear: both;
+    position: absolute;
+    transition: all 0.3s ease;
 
+  }
+  &:hover {
+    cursor: pointer;
+      .background-hover{
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+  }
+
+}
 </style>

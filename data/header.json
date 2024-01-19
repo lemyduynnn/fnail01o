@@ -1,6 +1,6 @@
 { 
   "background": "#FFF",
-  "logo": "/images/logo.svg",
+  "logo": "/images/logo.png",
   "alt_image": "Beauty Nails",
   "icon_close": "/images/close_icon.svg",
   "icon_menu": "/images/iconMenu.svg",
@@ -10,19 +10,31 @@
       "text": "Home"
     },
     {
-      "link": "#about",
+      "link": "about",
       "text": "About Us"
     },
     {
-      "link": "#services",
-      "text": "Our services"
+      "link": "services",
+      "text": "Services"
     },
     {
-      "link": "#gallery",
-      "text": "Gallery"
+      "link": "booking",
+      "text": "Booking"
     },
     {
-      "link": "#contact",
+      "link": "coupons",
+      "text": "Coupons"
+    },
+    {
+      "link": "gift-cards",
+      "text": "giftcards"
+    },
+    {
+      "link": "gallery",
+      "text": "gallery"
+    },
+    {
+      "link": "contact",
       "text": "Contact us"
     }
   ],

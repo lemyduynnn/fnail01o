@@ -1,41 +1,73 @@
 @use 'variables';
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Yellowtail&display=swap');
-@font-face {
-  font-family: 'Century Gothic';
-  src: url('/public/fonts/CenturyGothic.eot');
-  src: url('/public/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
-    url('/public/fonts/CenturyGothic.woff2') format('woff2'),
-    url('/public/fonts/CenturyGothic.woff') format('woff'),
-    url('/public/fonts/CenturyGothic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Century Gothic Bold';
-  src: url('/public/fonts/CenturyGothic-Bold.eot');
-  src: url('/public/fonts/CenturyGothic-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('/public/fonts/CenturyGothic-Bold.woff2') format('woff2'),
-    url('/public/fonts/CenturyGothic-Bold.woff') format('woff'),
-    url('/public/fonts/CenturyGothic-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
-  font-size: 22px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000;
-  background: #fff;
-  line-height: normal;
+  font-weight: 300;
 }
-@media only screen and (max-width: 1140px) {
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.heading-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 88px;
+}
+.heading-3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.custom-btn {
+  padding: 18px 40px;
+  font-weight: 400;
+  display: inline-block;
+  background: var(--color-primary);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 20px;
+  min-width: fit-content;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+p {
+  white-space: break-spaces;
+}
+
+.footer-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 80%;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+.container {
+  padding:16px;
+}
+
+::selection {
+  background-color: rgb(blue, 30%) !important;
+}
+@media (min-width: 1024px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 1272px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding:20px;
   }
 }
