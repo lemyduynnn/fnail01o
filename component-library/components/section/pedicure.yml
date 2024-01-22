@@ -2,101 +2,49 @@
 spec:
   structures:
     - content_blocks
-  label: Pedicure Section
-  description: Pedicure Section
+  label: Testimonial Section
+  description: Testimonial Section
   icon: "cottage"
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-    id: pedicure
-    title: SPA
-    sub_title: PEDICURE
-    background: /images/bg-section3.png
-    title_content: Pedicures may be the single most popular beauty treatment at spas and salons. After all, who doesn’t want to have their feet rubbed down and treated by an experienced and talented esthetician? 
-    icon_star: /images/start.svg
-    alt_image: beauty nail
-    link_youtube: https://www.youtube.com/embed/cOA7FkFiEU0
-    title_youtube: Beauty Nails
-    pedicures: 
-      - title: REMOVE NAIL POLISH
-        content: Removed the polish from your nails you’re ready for the fun stuff.
-        img: /images/circle1.svg
-        alt_image: Beauty Nails
-      - title: TAKE CARE OF CUTICLES
-        content: Remove and dry one of your feet. Gently apply and massage cuticle oil into bed of your nails
-        img: /images/circle2.svg
-        alt_image: Beauty Nails
-      - title: MASSAGE FEET, APPLY POLISH
-        content: Adding your color coat you can either add another or finish off your pedicure with the final top coat. 
-        img: /images/circle3.svg
-        alt_image: Beauty Nails
-    pedicure_number: 3
-    step: STEPS
-    step_content: take care your legs
-    thousands: THOUSANDS
-    customer_like: Customers like
-    
-
+  id: testimonial
+  title: OUR TESTIMONIAL
+  background: /images/bg-testimonial.png
+  slide_testimonial:
+    - text: Love the quality of service here. Nice atmosphere as far as cleanliness and the decor. Love my tech there named Kim. Great promos throughout the year. Highly suggest the hot stone pedicure treat yourself don’t cheat yourself! Great prices as well
+      name: Lauren Davis
+      img: /images/testimonial1.png
+    - text: Love the quality of service here. Nice atmosphere as far as cleanliness and the decor. Love my tech there named Kim. Great promos throughout the year. Highly suggest the hot stone pedicure treat yourself don’t cheat yourself! Great prices as well
+      name: Amy Kelly
+      img: /images/testimonial2.png
+    - text: Love the quality of service here. Nice atmosphere as far as cleanliness and the decor. Love my tech there named Kim. Great promos throughout the year. Highly suggest the hot stone pedicure treat yourself don’t cheat yourself! Great prices as well
+      name: Lauren Davis
+      img: /images/testimonial1.png
+    - text: Love the quality of service here. Nice atmosphere as far as cleanliness and the decor. Love my tech there named Kim. Great promos throughout the year. Highly suggest the hot stone pedicure treat yourself don’t cheat yourself! Great prices as well
+      name: Amy Kelly
+      img: /images/testimonial2.png
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-    id: 
-      type: text
-      label: ID Section
-    title:
-      type: text
-      label: Title
-    sub_title:
-      type: text
-      label: Sub Title
-    background:
-      type: image
-      label: Background
-    title_content:
-      type: text
-      label: Title Content
-    icon_star:
-      type: image
-      label: Icon star
-    alt_image:
-      type: text
-      label: Alt Image
-    link_youtube:
-      type: text
-      label: Image Youtube
-    title_youtube: 
-      type: text
-      label: Title Youtube
-    pedicures[*].title:
-      type: text
-      label: Item Title
-    pedicures[*].content:
-      type: text
-      label: Item Content
-    pedicures[*].img:
-      type: image
-      label:  Item Image 
-    pedicures[*].alt_image:
-      type: text
-      label: Item Alt Image
-    pedicure_number:
-      type: text
-      label: Pedicure Number
-    step:
-      type: text
-      label: Step
-    step_content:
-      type: text
-      label:
-    thousands:
-      type: text
-      label: Step Content
-    customer_like:
-      type: text
-      label:  Customer
-
-    
-
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  background:
+    type: image
+    label: Background Image
+  slide_testimonial[*].text:
+    type: text
+    label: Text
+  slide_testimonial[*].name:
+    type: text
+    label: Name
+  slide_testimonial[*].img:
+    type: image
+    label: Image

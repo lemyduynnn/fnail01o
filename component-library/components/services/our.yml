@@ -1,0 +1,82 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Our Service
+  description: Our Service
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: our
+  title: Our Service
+  data:
+    - img: /images/service1.png
+      alt: Alt Img
+      title: HAIRCUTS & STYLE
+      type:
+        - name: HAIRCUT AND STYLE
+          price: $42 - $78+
+        - name: SHAMPOO AND STYLE
+          price: $44 - $60+
+        - name: CLIPPER CUTS
+          price: $20+
+        - name: FORMAL THERMAL STYLING
+          price: $85+
+    - img: /images/service1.png
+      alt: Alt Img
+      title: COLOR & FOIL
+      type:
+        - name: THE BASIC BELLE
+          price: $108 - $160+
+        - name: THE BOMBSHELL BELLE
+          price: $228 - $322+
+        - name: THE MAINTENANCE BELLE
+          price: $148 - $214+
+        - name: THE ULTIMATE BELLE
+          price: $348 - $484+
+        - name: THE MODERN BELLE
+          price: $188 - $268+
+        - name: THE ULTIMATE BELLE
+          price: $348 - $484+
+        - name: THE IT'S COMPLICATED BELLE
+          price: $348 - $484+
+    - img: /images/service1.png
+      alt: Alt Img
+      title: HAIR EXTENSIONS
+      type:
+        - name: HAIRCUT AND STYLE
+          price: $42 - $78+
+        - name: HAIRCUT AND STYLE
+          price: $42 - $78+
+        - name: HAIRCUT AND STYLE
+          price: $42 - $78+
+        - name: HAIRCUT AND STYLE
+          price: $42 - $78+
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  title:
+    type: text
+    label: Title
+  data[*].img:
+    type: image
+    label: Image
+  data[*].alt:
+    type: text
+    label: Alt Image
+  data[*].title:
+    type: text
+    label: Title
+  data[*].type[*].name:
+    type: text
+    label: Name
+  data[*].type[*].price:
+    type: text
+    label: Price

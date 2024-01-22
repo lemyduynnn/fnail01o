@@ -1,0 +1,36 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Hero About
+  description: Hero About
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: hero
+  title:
+  img: /images/about-us.jpeg
+  img_alt:
+  content:
+    <p>If you are seeking a nail salon that helps you to rejuvenate your beauty, Special Nails & Spa is the ideal destination! Located conveniently in Houston, TX 77042, our nail salon is proud to deliver the highest quality treatments to our customers.</p>
+    <p>Our goal is to make each client feel comfortable and special! You will always receive the best services and friendly smiles from our talented staff. We offer our clients the maximum in style, quality, and customer service. We invite you to experience the difference in our services.</p>
+    <p>We understand that Safety and Sanitation are key to your peace of mind. Our implements are medically sterilized and disinfected after each use. Buffers and files are used only once and then discarded. All pedicure procedures are done with liner protection. And above all, staff are trained to follow a proper sanitization protocol that puts clients' hygiene as the number one priority.</p>
+    <p>Enjoy our wide range of services in a cozy and luxurious environment. We look forward to serving you!</p>
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  img:
+    type: image
+    label: Image
+  img_alt:
+    type: text
+    label: Alt Image
+  content:
+    type: markdown
+    label: Content

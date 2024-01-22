@@ -9,70 +9,34 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   id: services
-  icon_star: /images/start.svg
-  alt_image: beauty nail
-  title: OUR
-  sub_title: SERVICES
-  background: /images/bg-section2.png
-  icon_left: /images/icon-left.png
-  icon_right: /images/icon-right.png
+  title: OUR SERVICE
+  sub_title: Professional Nail Care for Ladies and Gentleman
   services:
-    - text: MANICURE
-      service_item:
-        - img: /images/service1.png
-          image_alt: Beauty nail
-          author: By Anna
-        - img: /images/service2.png
-          image_alt: Beauty nail
-          author: By Steven
-        - img: /images/service3.png
-          image_alt: Beauty nail
-          author: By Lina
-        - img: /images/service4.png
-          image_alt: Beauty nail
-          author: By Steven
-    - text: PEDICURE
-      service_item:
-        - img: /images/service1.png
-          image_alt: Beauty nail
-          author: By Anna
-        - img: /images/service2.png
-          image_alt: Beauty nail
-          author: By Steven
-        - img: /images/service3.png
-          image_alt: Beauty nail
-          author: By Lina
-        - img: /images/service4.png
-          image_alt: Beauty nail
-          author: By Steven
-    - text: PERMANENT MAKEUP
-      service_item:
-        - img: /images/service1.png
-          image_alt: Beauty nail
-          author: By Anna
-        - img: /images/service2.png
-          image_alt: Beauty nail
-          author: By Steven
-        - img: /images/service3.png
-          image_alt: Beauty nail
-          author: By Lina
-        - img: /images/service4.png
-          image_alt: Beauty nail
-          author: By Steven
-    - text: MASSAGE
-      service_item:
-        - img: /images/service1.png
-          image_alt: Beauty nail
-          author: By Anna
-        - img: /images/service2.png
-          image_alt: Beauty nail
-          author: By Steven
-        - img: /images/service3.png
-          image_alt: Beauty nail
-          author: By Lina
-        - img: /images/service4.png
-          image_alt: Beauty nail
-          author: By Steven
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+    - text: Manicure
+      img: /images/service1.png
+      background_img: /images/bg-service.png
+  welcome:
+    img: /images/welcome.jpeg
+    img_alt:
+    bg_welcome: /images/bg-welcome.png
+    title: welcomes to</br>special nails & spa
+    title_content1: If you are seeking a nail salon that helps you to rejuvenate your beauty, Special Nails & Spa is the ideal destination! Located conveniently in Houston, TX 77042, our nail salon is proud to deliver the highest quality treatments to our customers.
+    title_content2: Our goal is to make each client feel comfortable and memorable! You will always receive the best services and friendly smiles from our talented staff. We offer our clients the best style, quality, and customer service. We invite you to experience the difference in our services.
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -82,42 +46,36 @@ _inputs:
   id:
     type: text
     label: ID Section
-  icon_star:
-    type: image
-    label: Icon Star
-  alt_image:
-    type: text
-    label: Alt Image
   title:
     type: text
     label: Title
   sub_title:
     type: text
     label: Sub Title
-  background:
-    type: image
-    label: Background
-  icon_left:
-    type: image
-    label: Icon Back
-  icon_right:
-    type: image
-    label: Icon Next
   services[*].text:
     type: text
     label: Service Text
-  services[*].service_item[*].img:
+  services[*].img:
     type: image
     label: Image
-  services[*].service_item[*].image_alt:
-    type: text
-    label: Beauty nail
-  services[*].service_item[*].author:
-    type: text
-    label: Author
-  icon_left:
+  services[*].background_img:
     type: image
-    label: Icon Left
-  icon_right:
+    label: Background Image
+  welcome[*].img:
     type: image
-    label: Icon Right
+    label: Image
+  welcome[*].bg_welcome:
+    type: image
+    label: Background Image
+  welcome[*].img_alt:
+    type: text
+    label: Alt Image
+  welcome[*].title:
+    type: markdown
+    label: Title
+  welcome[*].title_content1:
+    type: text
+    label: Title 1
+  welcome[*].title_content2:
+    type: text
+    label: Title 2

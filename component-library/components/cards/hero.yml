@@ -1,0 +1,53 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Hero Cards
+  description: Hero Cards
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: hero
+  desc: <p>Our system is being upgraded.</p>
+    <p>Your order has not been processed this time.</p>
+    <p>We apologize for this inconvenience.</p>
+  contact: Please contact
+  phone: 832-968-6668
+  listImg:
+    - img: /images/giftcards1.png
+      alt: Alt Img
+      text: Happy Father's Day
+    - img: /images/giftcards2.png
+      alt: Alt Img
+      text: Happy Birthday
+    - img: /images/giftcards3.png
+      alt: Alt Img
+      text: Happy Valentine Day
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  desc:
+    type: markdown
+    label: Description
+  contact:
+    type: text
+    label: Contact
+  phone:
+    type: text
+    label: Phone
+  listImg[*].img:
+    type: image
+    label: Image
+  listImg[*].alt:
+    type: text
+    label: Alt Image
+  listImg[*].text:
+    type: text
+    label: Text Img

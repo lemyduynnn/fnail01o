@@ -1,0 +1,82 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Hero Gallery
+  description: Hero Gallery
+  icon: "cottage"
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  id: hero
+  list:
+    - tab: All
+      listImg:
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+    - tab: All Nails Design 77042
+      listImg:
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+        - img: /images/gallery1.png
+          alt: Alt Img
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:
+  id:
+    type: text
+    label: ID Section
+  list[*].tab:
+    type: text
+    label: Title Tab
+  list[*].listImg[*].img:
+    type: image
+    label: Image
+  list[*].listImg[*].alt:
+    type: text
+    label: Alt Image
