@@ -3,3 +3,15 @@ content_blocks:
   - _block_name: about/nav
     id: nav
     sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: coupons/hero
+    id: hero
+    listImg:
+      - img: /images/coupons1.png
+        alt: Alt Img
+      - img: /images/coupons2.png
+        alt: Alt Img
+      - img: /images/coupons3.png
+        alt: Alt Img
+      - img: /images/coupons4.png
+        alt: Alt Img

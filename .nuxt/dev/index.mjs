@@ -56,16 +56,11 @@ const defineAppConfig = (config) => config;
 
 const appConfig0 = defineAppConfig({
   ui: {
-    primary: "red",
-    gray: "cool",
     button: {
-      default: {
-        size: "lg"
-      }
-    },
-    input: {
-      default: {
-        size: "lg"
+      color: {
+        custom: {
+          subtle: "..."
+        }
       }
     }
   }

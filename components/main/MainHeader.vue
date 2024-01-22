@@ -14,6 +14,7 @@
             <li
               v-for="(header, index) of headerData.items"
               :key="index"
+              :class="{ 'text-secondary': isActiveMenuItem(header.link) }"
               class="p-2 text-[16px] hover:text-secondary hover:cursor-pointer font-semibold uppercase whitespace-nowrap"
             >
               <NuxtLink :to="header.link">
@@ -29,6 +30,12 @@
 
 <script setup lang="ts">
 import headerData from "@/data/header.json";
+const route = useRoute();
+
+const isActiveMenuItem = (link: any) => {
+  const isActive = route.path === link || route.params.id === link;
+  return isActive;
+};
 
 </script>
 

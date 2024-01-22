@@ -3,3 +3,25 @@ content_blocks:
   - _block_name: about/nav
     id: nav
     sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: booking/hero
+    id: hero
+    form:
+      label_date: Date (required)
+      label_service: Service (required)
+      label_technician: Technician (optional)
+      button: SEARCH
+      add: Add another
+      title: Appointment Information
+      select_service:
+        - option: Milk and Honey Manicure ($35)
+        - option: Cucumber Manicure ($35)
+        - option: Lavender Manicure ($35)
+        - option: Full set color ($35)
+        - option: Ormbre Set ($35)
+        - option: Shape ($35)
+        - option: Pink and White Fill In ($35)
+        - option: Color Powder Full Set ($35)
+      select_technician:
+        - option: Kim
+        - option: Tony

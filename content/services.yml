@@ -8,10 +8,9 @@ content_blocks:
     id: our
     title: Our Service
     data:
-      - logo: /images/iconlogo.png
-        img: /images/service1.png
+      - img: /images/service1.png
+        alt: Alt Img
         title: HAIRCUTS & STYLE
-        button: Book now
         type:
           - name: HAIRCUT AND STYLE
             price: $42 - $78+
@@ -21,10 +20,9 @@ content_blocks:
             price: $20+
           - name: FORMAL THERMAL STYLING
             price: $85+
-      - logo: /images/iconlogo.png
-        img: /images/service1.png
+      - img: /images/service1.png
+        alt: Alt Img
         title: COLOR & FOIL
-        button: Book now
         type:
           - name: THE BASIC BELLE
             price: $108 - $160+
@@ -40,10 +38,9 @@ content_blocks:
             price: $348 - $484+
           - name: THE IT'S COMPLICATED BELLE
             price: $348 - $484+
-      - logo: /images/iconlogo.png
-        img: /images/service1.png
+      - img: /images/service1.png
+        alt: Alt Img
         title: HAIR EXTENSIONS
-        button: Book now
         type:
           - name: HAIRCUT AND STYLE
             price: $42 - $78+

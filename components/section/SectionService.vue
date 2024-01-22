@@ -15,7 +15,7 @@
           </p>
           <span class="h-[8px] bg-main w-[100px]"></span>
       </div>
-      <div class="relative grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 justify-center items-center mt-6 w-full">
+      <div class="relative grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-[60px] gap-y-[30px] justify-center items-center mt-6 w-full">
         <div 
           v-for="(item, index) in block.services" 
           :key="index"
@@ -23,10 +23,14 @@
         >
           <div
             :style="{ backgroundImage: 'url(\'' + item.background_img + '\')' }"
-            class="h-full w-full bg-cover z-[-3333] background-hover"
+            class="h-full w-full bg-cover z-[-3333] background-hover-left"
           ></div>
-          <div class="mx-10 bg-white">
-            <div class="aspect-[1/1]">
+          <div
+            :style="{ backgroundImage: 'url(\'' + item.background_img + '\')' }"
+            class="h-full w-full bg-cover z-[-3333] background-hover-right"
+          ></div>
+          <div class="mx-8 bg-white">
+            <div class="aspect-[230/230]">
               <img :src="item.img" class="w-full h-full border-[#e7e7e7] border-[3px] rounded-[50px]"/>
             </div>
             <div class="flex items-center gap-4 mt-6">
@@ -64,19 +68,31 @@ const { dataBinding, block } = defineProps<Props>();
 
 <style lang="scss" scoped>
 .hover_item{
-  .background-hover{
+  .background-hover-left{
     overflow: visible;
     clear: both;
     position: absolute;
     transition: all 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  .background-hover-right{
+    overflow: visible;
+    clear: both;
+    position: absolute;
+    transition: all 0.3s ease;
+    right: 50%;
+    transform: translateX(50%);
 
   }
   &:hover {
     cursor: pointer;
-      .background-hover{
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
+      .background-hover-left{
+      transform: translateX(-70%);
+    }
+    .background-hover-right{
+      transform: translateX(70%);
     }
   }
 

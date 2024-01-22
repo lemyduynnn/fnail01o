@@ -1,0 +1,23 @@
+title: Cards
+content_blocks:
+  - _block_name: about/nav
+    id: nav
+    sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: cards/hero
+    id: hero
+    desc: <p>Our system is being upgraded.</p>
+      <p>Your order has not been processed this time.</p>
+      <p>We apologize for this inconvenience.</p>
+    contact: Please contact
+    phone: 832-968-6668
+    listImg:
+      - img: /images/giftcards1.png
+        alt: Alt Img
+        text: Happy Father's Day
+      - img: /images/giftcards2.png
+        alt: Alt Img
+        text: Happy Birthday
+      - img: /images/giftcards3.png
+        alt: Alt Img
+        text: Happy Valentine Day

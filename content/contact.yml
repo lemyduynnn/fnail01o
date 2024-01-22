@@ -3,3 +3,13 @@ content_blocks:
   - _block_name: about/nav
     id: nav
     sub_title: welcome to <br/>special naiils & spa
+
+  - _block_name: contact/hero
+    id: hero
+    title: contact us
+    label_name: Your name (required)
+    label_email: Your email (required)
+    label_subject: Your subject (required)
+    label_message: Your message (required)
+    text_button: send us
+
