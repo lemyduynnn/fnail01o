@@ -7,10 +7,10 @@
   >
     <div class="container">
       <div class="flex flex-col items-center font-bold text-main justify-center gap-4 py-4">
-          <h2 class="text-[40px]">
+          <h2 class="text-[40px] pt-[20px]">
             {{ block.title }}
           </h2>
-          <p class="text-[18px]">
+          <p class="text-[18px] text-center">
             {{ block.sub_title }}
           </p>
           <span class="h-[8px] bg-main w-[100px]"></span>

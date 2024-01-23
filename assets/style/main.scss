@@ -93,20 +93,17 @@ p {
   text-transform: uppercase;
 }
 .container {
-  padding:16px;
+  padding:0 15px;
 }
 
-::selection {
-  background-color: rgb(blue, 30%) !important;
-}
 @media (min-width: 1024px) {
   .container {
-    max-width: 1272px;
+    max-width: 1140px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .container {
-    padding:20px;
+    padding:0 15px;
   }
 }

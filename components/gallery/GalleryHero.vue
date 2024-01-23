@@ -6,7 +6,7 @@
     class="section_gallery"
   >
     <div class="container">
-      <ul class="w-full sm:flex-row flex flex-col gap-4 justify-center items-center pb-[15px]">
+      <ul class="w-full sm:flex-row flex flex-col gap-4 justify-center items-center py-[20px]">
         <li 
           v-for="(item, index) in block.list" 
           :key="index"

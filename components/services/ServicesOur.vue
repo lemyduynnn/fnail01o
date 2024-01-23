@@ -2,7 +2,7 @@
 <template>
    <section :id="block.id" :data-cms-bind="dataBinding" class="section-our">
     <div class="container">
-      <div class="w-full flex flex-col justify-center items-center gap-20 mt-[20px]">
+      <div class="w-full flex flex-col justify-center items-center gap-20 py-[20px]">
         <div v-for="(item, index) in block.data" :key="index" class="lg:even:flex-row-reverse w-full lg:flex lg:flex-row flex flex-col justify-between items-center lg:gap-20 gap-8">
           <div class="flex flex-col items-center justify-center">
             <img :src="item.img" :alt="item.alt" class="object-cover w-full aspect-[500/500] border-[3px] rounded-full border-main"/>

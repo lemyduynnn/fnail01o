@@ -6,7 +6,7 @@
     class="w-full"
   >
     <div class="container">
-      <div class="flex flex-col items-center font-bold text-main justify-center gap-4 py-4">
+      <div class="flex flex-col items-center font-bold text-main justify-center gap-4 pt-[20px]">
           <h2 class="text-[40px] uppercase">
             {{ block.title }}
           </h2>

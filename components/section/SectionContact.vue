@@ -12,7 +12,7 @@
       <!-- title -->
       <div class="mt-[90px] mb-[80px] flex gap-[5px]">
         <div class="flex flex-col items-end text-main justify-center">
-          <div class="font-rubik text-[45px]">
+          <div class="font-rubik text-[45px] pt-[20px]">
             {{ block.title }}
           </div>
           <div>

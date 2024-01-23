@@ -57,6 +57,9 @@
          "time": "Closed"
       }
    ],
+   "buttonToTop": "/images/top.png",
+   "call": "/images/call.png",
+   "book": "/images/book.png",
    "logo": "/images/logo.png",
    "year": "© 2023 Special Nails & Spa. All Rights Reserved.",
    "inputs": {

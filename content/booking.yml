@@ -13,6 +13,40 @@ content_blocks:
       button: SEARCH
       add: Add another
       title: Appointment Information
+      confirm: 
+        title: Confirm booking information ?
+        sub_title: We will send a text message to you via the number below after we confirm the calendar for your booking.
+        label_name: Your name (required)
+        label_phone: Your phone (required)
+        label_note: Note (optional)
+        note_phone: By entering your number, you agree to receive mobile messages at the phone number provided.
+        text_button_cancel: cancel
+        text_button_confirm: confirm
+      time_morning_appoinment:
+          title: Morning
+          open_time:
+            - time: 10:00 am
+            - time: 10:30 am
+            - time: 11:00 am
+            - time: 11:30 am
+      time_afternoon_appoinment: 
+          title: Afternoon
+          open_time:
+            - time: 12:00 am
+            - time: 12:30 am
+            - time: 1:00 am
+            - time: 1:30 am
+            - time: 2:00 am
+            - time: 2:30 am
+            - time: 3:00 am
+            - time: 3:30 am
+            - time: 4:00 am
+            - time: 4:30 am
+            - time: 5:00 am
+            - time: 5:30 am
+            - time: 6:00 am
+            - time: 6:30 am
+            - time: 7:00 am
       select_service:
         - option: Milk and Honey Manicure ($35)
         - option: Cucumber Manicure ($35)

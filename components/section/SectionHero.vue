@@ -9,6 +9,10 @@
       :slides-per-view="1"
       @swiper="onSwiper"
       class="mySwiper w-full"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+      }"
       :modules="modules"
       :pagination="true"
       :navigation="true"
@@ -30,8 +34,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { Pagination } from 'swiper/modules';
-  import { Navigation } from 'swiper/modules';
+  import { Pagination, Autoplay, Navigation } from 'swiper/modules';
   import 'swiper/css/pagination';
 
 interface Props {
@@ -39,7 +42,7 @@ interface Props {
   block: any;
 }
 const { dataBinding, block } = defineProps<Props>();
-const modules =  [Pagination, Navigation]
+const modules =  [Pagination, Navigation, Autoplay]
   const onSwiper = (swiperInstance: any) => {
   mySwiper.value = swiperInstance;
 };

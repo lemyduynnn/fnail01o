@@ -8,7 +8,7 @@
   >
     <div class="container flex flex-col justify-between py-[20px]">
       <div class="flex flex-col items-center font-bold text-main justify-center gap-4">
-          <h2 class="text-[40px]">
+          <h2 class="text-[40px] pt-[20px]">
             {{ block.title }}
           </h2>
           <span class="h-[8px] bg-main w-[100px]"></span>

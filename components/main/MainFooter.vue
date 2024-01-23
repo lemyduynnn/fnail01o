@@ -84,11 +84,51 @@
         <p class="text-white text-[16px]">{{ footerData.year }}</p>
       </div>
     </div>
+    <div class="fixed right-[15px] bottom-[85px] z-50 gap-[20px] flex flex-col">
+      <div @click="" class="border-[3px] border-white bg-main rounded py-[7px] px-[10px] cursor-pointer custom_hover">
+        <img :src="footerData.call" alt="call" class="mx-auto w-8 h-8">
+      </div>
+      <div @click="" class="border-[3px] border-white bg-secondary rounded py-[7px] px-[10px] cursor-pointer custom_hover">
+        <img :src="footerData.book" alt="book" class="mx-auto w-8 h-8">
+      </div>
+    </div>
+    <div v-show="isShowButtonToTop" class="fixed right-[15px] bottom-[15px] z-50 bg-secondary rounded py-[10px] px-[13px] cursor-pointer" @click="scrollToTop()">
+      <img :src="footerData.buttonToTop" alt="icon to top" class="mx-auto w-8 h-8">
+    </div>
   </footer>
 </template>
 
 <script setup lang="ts">
 import footerData from '@/data/footer.json';
+
+const isShowButtonToTop = ref(false)
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      isShowButtonToTop.value = true
+    } else {
+      isShowButtonToTop.value = false
+    }
+  })
+})
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scope>
+.custom_hover {
+  transition: all 0.3s ease;
+
+  &:hover{
+    border: 3px solid #000;
+    background-color: #000;
+  }
+
+}
+</style>

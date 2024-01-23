@@ -6,7 +6,7 @@
     class="section_gallery"
   >
     <div class="container">
-      <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] mb-6">
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-[30px] py-[20px]">
         <div
           v-for="(item, index) in block.listImg"
           :key="index"

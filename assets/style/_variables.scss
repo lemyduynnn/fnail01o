@@ -3,9 +3,12 @@
   --color-secondary: #e83e8c;
   --color-white: #fff;
   
-  --swiper-navigation-size: 30px;
+  --swiper-navigation-size: 30px !important;
   --swiper-navigation-top-offset: 50%;
-  --swiper-navigation-sides-offset: 0px;
-  --swiper-navigation-color: #000;
-  
+  --swiper-navigation-sides-offset: 5px !important;
+  --swiper-navigation-color: #fff;
+
+  --swiper-pagination-color: #000;
+  --swiper-pagination-bottom: 30px;
+  --swiper-pagination-bullet-inactive-opacity: 0.1;
 }
