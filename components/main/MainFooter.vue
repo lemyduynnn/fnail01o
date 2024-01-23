@@ -17,16 +17,16 @@
           <span class="w-1/3 h-[8px] bg-white"></span>
           <h2 class="text-white text-[28px] leading-[50px] uppercase font-medium">{{ footerData.items[0].title }}</h2>
           <div class="flex flex-col gap-2 justify-start items-start">
-            <div class="flex gap-2">
+            <div class="flex gap-2 w-full h-full">
               <img src="/images/icon_map.png" class="w-6 h-6"/>
               <p class="text-white leading-[30px]" v-html="footerData.information[0].address"></p>
             </div>
             <div class="flex gap-2">
-              <img src="/images/icon_map.png" class="w-6 h-6"/>
+              <img src="/images/call.png" class="w-6 h-6"/>
               <p class="text-white leading-[30px]" v-html="footerData.information[1].phone"></p>
             </div>
             <div class="flex gap-2">
-              <img src="/images/icon_map.png" class="w-6 h-6"/>
+              <img src="/images/mail.png" class="w-6 h-6"/>
               <p class="text-white leading-[30px]" v-html="footerData.information[2].mail"></p>
             </div>
           </div>

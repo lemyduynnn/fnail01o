@@ -35,7 +35,7 @@
             </div>
             <div class="flex items-center gap-4 mt-6">
               <span class="h-[5px] bg-main w-[50px]"></span>
-              <span class="uppercase font-bold">{{ item.text }}</span>
+              <span class="uppercase font-bold leading-[32px]">{{ item.text }}</span>
             </div>
           </div>
         </div>
