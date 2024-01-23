@@ -33,9 +33,7 @@ import headerData from "@/data/header.json";
 
 const route = useRoute();
 
-const isActiveMenuItem = (link:any) => {
-  console.log(link);
-  
+const isActiveMenuItem = (link:any) => {  
   return route.path === link;
 };
 

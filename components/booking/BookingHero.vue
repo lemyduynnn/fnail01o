@@ -10,8 +10,8 @@
             <div class="flex flex-col gap-[15px] text-[14px]">
                <div class="flex flex-col gap-[8px] lg:w-1/4 w-full">
                   <label class="">{{ block.form.label_date }}</label>
-                  <UPopover :popper="{ placement: 'bottom-start' }">
-                     <UButton icon="i-heroicons-calendar-days-20-solid" :label="label" />
+                  <UPopover :popper="{ placement: 'bottom-start' }"  class="custom_calendar">
+                     <UButton icon="i-heroicons-calendar-days-20-solid" :label="label"/>
                      <template #panel="{ close }">
                         <LazyDatePicker v-model="date" @close="close"/>
                      </template>
@@ -199,6 +199,17 @@ const removeItem = (removeIndex:any) => {
 </script>
 
  <style lang="scss" scoped>
-
+.custom_calendar {
+   .bg-primary-500 {
+    --tw-bg-opacity: 0;
+   }
+   .text-white {
+      color: #000;
+      font-size: 14px;
+      font-weight: 300;
+      border: 1px solid #d7d7d7;
+      border-radius: 0;
+   }
+}
  </style>
  
