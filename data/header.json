@@ -10,31 +10,31 @@
       "text": "Home"
     },
     {
-      "link": "about",
+      "link": "/about",
       "text": "About Us"
     },
     {
-      "link": "services",
+      "link": "/services",
       "text": "Services"
     },
     {
-      "link": "booking",
+      "link": "/booking",
       "text": "Booking"
     },
     {
-      "link": "coupons",
+      "link": "/coupons",
       "text": "Coupons"
     },
     {
-      "link": "cards",
+      "link": "/cards",
       "text": "giftcards"
     },
     {
-      "link": "gallery",
+      "link": "/gallery",
       "text": "gallery"
     },
     {
-      "link": "contact",
+      "link": "/contact",
       "text": "Contact us"
     }
   ],

@@ -85,12 +85,12 @@
       </div>
     </div>
     <div class="fixed right-[15px] bottom-[85px] z-50 gap-[20px] flex flex-col">
-      <div @click="" class="border-[3px] border-white bg-main rounded py-[7px] px-[10px] cursor-pointer custom_hover">
+      <NuxtLink to="/contact" class="border-[3px] border-white bg-main rounded py-[7px] px-[10px] cursor-pointer custom_hover">
         <img :src="footerData.call" alt="call" class="mx-auto w-8 h-8">
-      </div>
-      <div @click="" class="border-[3px] border-white bg-secondary rounded py-[7px] px-[10px] cursor-pointer custom_hover">
+      </NuxtLink>
+      <NuxtLink to="/booking" class="border-[3px] border-white bg-secondary rounded py-[7px] px-[10px] cursor-pointer custom_hover">
         <img :src="footerData.book" alt="book" class="mx-auto w-8 h-8">
-      </div>
+      </NuxtLink>
     </div>
     <div v-show="isShowButtonToTop" class="fixed right-[15px] bottom-[15px] z-50 bg-secondary rounded py-[10px] px-[13px] cursor-pointer" @click="scrollToTop()">
       <img :src="footerData.buttonToTop" alt="icon to top" class="mx-auto w-8 h-8">
@@ -100,6 +100,7 @@
 
 <script setup lang="ts">
 import footerData from '@/data/footer.json';
+import headerData from "@/data/header.json";
 
 const isShowButtonToTop = ref(false)
 

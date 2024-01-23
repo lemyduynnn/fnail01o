@@ -33,9 +33,10 @@ import headerData from "@/data/header.json";
 
 const route = useRoute();
 
-const isActiveMenuItem = (link: any) => {
-  const isActive = route.path === link || route.params.id === link;
-  return isActive;
+const isActiveMenuItem = (link:any) => {
+  console.log(link);
+  
+  return route.path === link;
 };
 
 </script>

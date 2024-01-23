@@ -44,7 +44,7 @@
                      </div>
                   </div>
                   <div class="flex flex-col md:py-[32px]">
-                     <button class="w-full bg-secondary uppercase py-3.5 px-10 text-white text-[14px] font-medium">{{ block.form.button }}</button>
+                     <button class="border-[2px] border-[#ced4da] w-full bg-secondary uppercase py-3.5 px-10 text-white text-[14px] font-medium">{{ block.form.button }}</button>
                   </div>
                </div>
                <div class="flex gap-2">
