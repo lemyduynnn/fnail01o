@@ -16,6 +16,40 @@ blueprint:
     button: SEARCH
     add: Add another
     title: Appointment Information
+    confirm:
+      title: Confirm booking information ?
+      sub_title: We will send a text message to you via the number below after we confirm the calendar for your booking.
+      label_name: Your name (required)
+      label_phone: Your phone (required)
+      label_note: Note (optional)
+      note_phone: By entering your number, you agree to receive mobile messages at the phone number provided.
+      text_button_cancel: cancel
+      text_button_confirm: confirm
+    time_morning_appoinment:
+      title: Morning
+      open_time:
+        - time: 10:00 am
+        - time: 10:30 am
+        - time: 11:00 am
+        - time: 11:30 am
+    time_afternoon_appoinment:
+      title: Afternoon
+      open_time:
+        - time: 12:00 am
+        - time: 12:30 am
+        - time: 1:00 am
+        - time: 1:30 am
+        - time: 2:00 am
+        - time: 2:30 am
+        - time: 3:00 am
+        - time: 3:30 am
+        - time: 4:00 am
+        - time: 4:30 am
+        - time: 5:00 am
+        - time: 5:30 am
+        - time: 6:00 am
+        - time: 6:30 am
+        - time: 7:00 am
     select_service:
       - option: Milk and Honey Manicure ($35)
       - option: Cucumber Manicure ($35)
@@ -61,3 +95,39 @@ _inputs:
   form[*].select_technician[*].option:
     type: text
     label: Text Option
+  form[*].confirm[*].title:
+    type: text
+    label: Text Confirm
+  form[*].confirm[*].sub_title:
+    type: text
+    label: Sub Title Confirm
+  form[*].confirm[*].label_name:
+    type: text
+    label: Label Name
+  form[*].confirm[*].label_phone:
+    type: text
+    label: Label Phone
+  form[*].confirm[*].label_note:
+    type: text
+    label: Label Note
+  form[*].confirm[*].note_phone:
+    type: text
+    label: Note Phone
+  form[*].confirm[*].text_button_cancel:
+    type: text
+    label: Text Button Cancel
+  form[*].confirm[*].text_button_confirm:
+    type: text
+    label: Text Button Confirm
+  form[*].time_morning_appoinment[*].title:
+    type: text
+    label: Title Time Morning
+  form[*].time_morning_appoinment[*].open_time[*].time:
+    type: text
+    label: Time Morning
+  form[*].time_afternoon_appoinment[*].title:
+    type: text
+    label: Title Time Afternoon
+  form[*].time_afternoon_appoinment[*].open_time[*].time:
+    type: text
+    label: Time Afternoon

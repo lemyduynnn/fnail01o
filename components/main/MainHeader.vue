@@ -35,7 +35,6 @@ const route = useRoute();
 
 const isActiveMenuItem = (link: any) => {
   const isActive = route.path === link || route.params.id === link;
-  console.log(isActive);
   return isActive;
 };
 

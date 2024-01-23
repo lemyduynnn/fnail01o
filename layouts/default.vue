@@ -10,9 +10,9 @@
 
 <script setup lang="ts">
 const route = useRoute()
-const showFooter = ref(route.path !== '/')
+const showFooter = ref(route.path)
 watch(() => route.path, (path) => {
-  showFooter.value = path !== '/'
+  showFooter.value = path
 })
 </script>
 
