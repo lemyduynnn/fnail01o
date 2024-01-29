@@ -6,7 +6,7 @@
     class="section_gallery"
   >
     <div class="container">
-      <div class="bg-[#fff3cd] border-[#ffeeba] flex flex-col gap-2 justify-center items-center w-full p-4 mb-2">
+      <div class="bg-[#fff3cd] border-[#ffeeba] flex flex-col gap-2 justify-center items-center w-full p-4 mb-2 mt-[20px]">
         <div class="text-[#856404] leading-[32px] text-center" >
           <div v-html="block.desc">
           </div>
